@@ -1,9 +1,6 @@
-const randomNumber = (max) => {
-	return Math.trunc(Math.random() * max + 1);
-};
-
-const gridImport = async () => {
+export default async function gridImport() {
 	// Récupérer les données JSON du fichier et créer un objet à partir des données JSON
+	console.log("gridImport")
 	const grids = await fetch("grilles.json").then((response) => {
 		if (response.ok) {
 			return response.json();
@@ -31,4 +28,8 @@ const gridImport = async () => {
 	}
 };
 
-gridImport();
+const randomNumber = (max) => {
+	return Math.trunc(Math.random() * max + 1);
+};
+
+//gridImport();

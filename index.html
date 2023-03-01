@@ -10,6 +10,14 @@
 		<link href="css/style.css" rel="stylesheet" />
 	</head>
 	<body>
+		<header class="myHeaderNav">
+			<img class="logo" src="sudoku.webp" width="64px" height="64px"/>
+			<nav class="myNav">
+				<button id="choose-button">Choisir</button>
+				<button id="check-button">Tester</button>
+				<button id="resolve-button">Résoudre</button>
+			</nav>
+		</header>
 		<table>
 			<tbody>
 				<tr>
@@ -113,13 +121,11 @@
 				</tr>
 			</tbody>
 		</table>
-    <button id="check-button">Check</button>
-		<button id="resolve-button">Resolve</button>
 	</body>
 
 	<!-- JS File -->
-  <script src="js/script.js"></script>
-  <script src="js/scriptImport.js"></script>
+  <script src="js/script.js" type="module"></script>
+  <script src="js/scriptImport.js" type="module"></script>
 	<script src="js/scriptResolve.js" type="module"></script>
 
 </html>

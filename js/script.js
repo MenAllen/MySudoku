@@ -1,4 +1,4 @@
-// Traitement des inputs du tableau
+import gridImport from './scriptImport.js';
 
 // Vérifier les valeurs du tableau sur click
 const controlValues = () => {
@@ -167,6 +167,9 @@ const controlValues = () => {
 	checkSquare();
 };
 
-// Recupérer le bouton verifier(
+// Recupérer les boutons verifier et choisir
 const buttonCheck = document.getElementById("check-button");
 buttonCheck.addEventListener("click", controlValues);
+
+const buttonChoose = document.getElementById("choose-button");
+buttonChoose.addEventListener("click", gridImport);

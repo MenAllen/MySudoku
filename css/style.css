@@ -8,11 +8,11 @@
 }
 
 input {
-  height: min(calc(100vh / 10), calc(100vw / 10));
-  width: min(calc(100vh / 10), calc(100vw / 10));
+  height: min(calc(80vh / 10), calc(80vw / 10));
+  width: min(calc(80vh / 10), calc(80vw / 10));
   text-align: center;
   appearance: none;
-  font-size: min(7vh, 7vw);
+  font-size: min(6vh, 6vw);
 }
 
 input:invalid,
@@ -51,4 +51,29 @@ button {
   margin: 1em auto 0;
   padding: 0.5em 2em;
   font-size:  min(3vh, 3vw);
+  border-radius: 10px;
+}
+
+.logo {
+  height: 120px;
+  width: 120px;
+}
+
+.myHeaderNav {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  height: 15vh;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.myNav {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10vw;
+}
+
+.myNav button:hover {
+  background-color: rgba(136, 239, 239, 0.944);
 }

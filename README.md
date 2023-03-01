@@ -19,5 +19,6 @@ App is available from https://menallen.github.io/MySudoku/
 # Documentation
 
 ## Nav Menu
-1) Import : under construction
-2) Resolve: under construction
+1) Choisir: choose a grid
+2) Tester: check for errors
+3) Resoudre: launch resolve process
