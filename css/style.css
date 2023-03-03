@@ -1,3 +1,7 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +26,7 @@ input:invalid,
 }
 
 input[readonly] {
-  color: blue;
+  color: #317AC1;
 }
 
 table {
@@ -35,7 +39,7 @@ tr {
 }
 
 tr:nth-of-type(3), tr:nth-of-type(6)  {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #384454;
 }
 
 td {
@@ -43,13 +47,13 @@ td {
 }
 
 td:nth-of-type(3), td:nth-of-type(6)  {
-  border-right: 1px solid #000;
+  border-right: 1px solid #384454;
 }
 
 button {
   display: block;
   margin: 1em auto 0;
-  padding: 0.5em 2em;
+  padding: 0.5em;
   font-size:  min(3vh, 3vw);
   border-radius: 10px;
 }
@@ -62,7 +66,7 @@ button {
 .myHeaderNav {
   display: flex;
   flex-direction: row;
-  width: 60vw;
+/*  width: 60vw; */
   height: 15vh;
   justify-content: space-around;
   margin: 0 auto;
@@ -71,9 +75,86 @@ button {
 .myNav {
   display: flex;
   flex-direction: row;
-  margin-left: 10vw;
+/*  margin-left: 20vw; */
+  align-items: center;
 }
 
 .myNav button:hover {
-  background-color: rgba(136, 239, 239, 0.944);
+  background-color: #E1A624;
+}
+
+/* Modale  */
+.Imodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #E1A624;
+  margin: 25% auto; /* 25% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40vw;
+}
+
+.modal-content p {
+  align-self: center;
+  margin-bottom: 1em;
+}
+
+#inputFile {
+  margin: 20px 0 0;
+  padding: 0;
+  height: 4vh;
+  width: 40vw;
+  text-align: center;
+  appearance: button;
+  -webkit-appearance: button;
+  font-size: 16px;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.btnBlock {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+/* The Button */
+.iclose, .icancel, .copyClip {
+  color: #000000;
+  background-color: #E1A624;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+  align-self: center;
+  margin: 20px 0 0;
+  padding: 8px;
+  border: 1px solid;
+}
+
+.iclose:hover,
+.iclose:focus,
+.icancel:hover,
+.icancel:focus,
+.copyClip:hover,
+.copyClip:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #342f2f;
 }

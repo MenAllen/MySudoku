@@ -21,4 +21,5 @@ App is available from https://menallen.github.io/MySudoku/
 ## Nav Menu
 1) Choisir: choose a grid
 2) Tester: check for errors
-3) Resoudre: launch resolve process
+3) Importer: Import grids from JSON file
+4) Resoudre: launch resolve process
