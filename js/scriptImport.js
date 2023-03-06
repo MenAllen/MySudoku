@@ -31,6 +31,7 @@ export async function gridChoose() {
 			const ident = "cel" + "-" + line + "-" + col;
 			const input = document.getElementById(ident);
 			input.value = value;
+			input.classList.remove("invalide");
 			if (value != null) {
 				input.readOnly = true;
 			}

@@ -17,7 +17,7 @@ export default class SudokuCursor {
   }
 
   goForward() {
-    // Si le curseur est au bout, retoruner faux
+    // Si le curseur est au bout, retourner faux
     if (this.line === 8 && this.col === 8) {
       return false
     }
