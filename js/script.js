@@ -1,4 +1,4 @@
-import { gridImport, gridChoose, createElement } from "./scriptImport.js";
+import { gridImport, gridChoose } from "./scriptImport.js";
 
 // Vérifier les valeurs du tableau sur click
 const controlValues = () => {

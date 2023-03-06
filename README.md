@@ -1,5 +1,5 @@
 # Code base for Project Sudoku
-Description: A sudoku grid to help in case of human deadlock, based on HTML/CSS & Javascript
+Description: A sudoku grid based on HTML/CSS & Javascript to help solve or build sudoku grid 
 
 ## Software tools used
  - Visual Studio Code V1.71
@@ -10,7 +10,7 @@ Description: A sudoku grid to help in case of human deadlock, based on HTML/CSS 
 # Getting Started
 
 ## Frontend
-clone this repo https://github.com/MenAllen/MySudoku.git
+clone this repo https://menallen.github.io/MySudoku/
 ### Start
 Just launch index.html with browser
 ### Github Pages
@@ -20,7 +20,8 @@ App is available from https://menallen.github.io/MySudoku/
 1) Choisir: choose a grid
 2) Tester: check for errors
 3) Importer: Import grids from JSON file
-4) Resoudre: launch resolve process
+4) Resoudre: launch resolve process (Note this can take several hours for difficult grids)
+Note to build a grid, just define a candidate grid, import it and solve it
 
 # Documentation
 Exemple de fichier JSON pour l'import:
