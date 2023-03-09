@@ -21,6 +21,7 @@ App is available from https://menallen.github.io/MySudoku/
 2) Tester: check for errors
 3) Importer: Import grids from JSON file
 4) Resoudre: launch resolve process (Note this can take several hours for difficult grids)
+On click, 'Resoudre' button becomes 'Arrêter' to allow to properly halt the sol
 Note to build a grid, just define a candidate grid, import it and solve it
 
 # Documentation

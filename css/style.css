@@ -83,7 +83,7 @@ button {
 }
 
 /* Modale  */
-.Imodal {
+.Imodal, .Rmodal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -112,6 +112,11 @@ button {
   align-self: center;
   margin-bottom: 1em;
   font-size: min(3vh, 3vw);
+}
+
+.small {
+  width: 25vw!important;
+  background-color: rgb(149, 228, 100);
 }
 
 #inputFile {

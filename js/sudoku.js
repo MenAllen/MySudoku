@@ -67,6 +67,10 @@ export default class Sudoku {
 			// Délai d'attente
 			await new Promise((resolve) => setTimeout(resolve, 2));
 		} while (cursor.progress());
+
+		// On affiche la modale pour indiquer la fin avec succès
+		const modalR = document.getElementById("resolveModal");
+		modalR.style.display = "block";
 	}
 
 	// Retourne si oui ou non le sudoku est valide, i.e. il ne contient pas d'erreurs
@@ -84,14 +88,14 @@ export default class Sudoku {
 				if (value == null) {
 					// Si la valeur est vide, ne rien faire
 				} else {
-          const valueExists = list.has(value)
+					const valueExists = list.has(value);
 					// si l'element n'est pas déjà dans la liste, on l'ajoute
-          if (valueExists) {
-            console.log('Erreur doublon ligne' + line + '-' + col)
-            return false
-          } else {
+					if (valueExists) {
+						console.log("Erreur doublon ligne" + line + "-" + col);
+						return false;
+					} else {
 						list.add(value);
-          }
+					}
 				}
 			}
 		}
@@ -108,14 +112,14 @@ export default class Sudoku {
 				if (value == null) {
 					// Si la valeur est vide, ne rien faire
 				} else {
-          const valueExists = list.has(value)
+					const valueExists = list.has(value);
 					// si l'element n'est pas déjà dans la liste, on l'ajoute
-          if (valueExists) {
-            console.log('Erreur doublon colonne' + line + '-' + col)
-            return false
-          } else {
+					if (valueExists) {
+						console.log("Erreur doublon colonne" + line + "-" + col);
+						return false;
+					} else {
 						list.add(value);
-          }
+					}
 				}
 			}
 		}
@@ -238,14 +242,14 @@ export default class Sudoku {
 				if (value == null) {
 					// Si la valeur est vide, ne rien faire
 				} else {
-          const valueExists = list.has(value)
+					const valueExists = list.has(value);
 					// si l'element n'est pas déjà dans la liste, on l'ajoute
-          if (valueExists) {
-            console.log('Erreur doublon carré' + line + '-' + col)
-            return false
-          } else {
+					if (valueExists) {
+						console.log("Erreur doublon carré" + line + "-" + col);
+						return false;
+					} else {
 						list.add(value);
-          }
+					}
 				}
 			}
 		}
