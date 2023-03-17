@@ -1,0 +1,13 @@
+{
+  "name": "mysudoku",
+  "version": "1.0.0",
+  "description": "Mon Sudoku",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
