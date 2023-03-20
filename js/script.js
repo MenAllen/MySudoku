@@ -232,3 +232,5 @@ buttonChoose.addEventListener("click", gridChoose);
 
 const buttonImport = document.getElementById("import-button");
 buttonImport.addEventListener("click", gridImport);
+
+console.log("Fin script");

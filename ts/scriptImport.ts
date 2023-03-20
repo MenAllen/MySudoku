@@ -11,7 +11,7 @@ export async function gridChoose(): Promise<void> {
 
 	console.log(gridsInStorage);
 
-	if (gridsInStorage) {
+	if (gridsInStorage > 0) {
 		grids = gridsInStorage;
 	} else {
 		grids = await fetch("grilles.json").then((response) => {
@@ -60,7 +60,8 @@ export function gridImport() {
 	// La valeur est enregistrée et la modale fermée
 	icloseBtn.onclick = function (event) {
 		event.preventDefault();
-		const fileObject = document.getElementById("inputFile")!.files[0];
+		const fileElement = <HTMLInputElement>document.getElementById("inputFile");
+		const fileObject = fileElement.files[0]
 
 //		const inputElement: any = document.getElementById('fileInput');
 //		const fileObject = inputElement.files[0];
