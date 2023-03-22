@@ -9,9 +9,7 @@ export async function gridChoose(): Promise<void> {
 		gridsInStorage = JSON.parse(value);
 	}
 
-	console.log(gridsInStorage);
-
-	if (gridsInStorage > 0) {
+	if (gridsInStorage.length > 0) {
 		grids = gridsInStorage;
 	} else {
 		grids = await fetch("grilles.json").then((response) => {
@@ -60,12 +58,8 @@ export function gridImport() {
 	// La valeur est enregistrée et la modale fermée
 	icloseBtn.onclick = function (event) {
 		event.preventDefault();
-		const fileElement = <HTMLInputElement>document.getElementById("inputFile");
-		const fileObject = fileElement.files[0]
-
-//		const inputElement: any = document.getElementById('fileInput');
-//		const fileObject = inputElement.files[0];
-
+		const fileElement = <HTMLInputElement & { files: FileList }>document.getElementById("inputFile");
+		const fileObject = fileElement.files[0];
 		var reader = new FileReader();
 		reader.readAsText(fileObject);
 
@@ -81,10 +75,10 @@ export function gridImport() {
 		};
 	};
 
-	// Get the CANCEL button element that closes the modal
+	// Le bouton CANCEL ferme la modale
 	const icancelBtn = <HTMLInputElement>document.getElementsByClassName("icancel")[0];
 
-	// When the user clicks on CANCEL, just close the modal
+	// Tout Click en dehors de ces deux botons ferme la modale
 	icancelBtn.onclick = function (event: any) {
 		event.preventDefault();
 		modal.style.display = "none";

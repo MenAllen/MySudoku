@@ -16,8 +16,7 @@ export function gridChoose() {
         if (typeof value === 'string') {
             gridsInStorage = JSON.parse(value);
         }
-        console.log(gridsInStorage);
-        if (gridsInStorage > 0) {
+        if (gridsInStorage.length > 0) {
             grids = gridsInStorage;
         }
         else {
@@ -64,8 +63,6 @@ export function gridImport() {
         event.preventDefault();
         const fileElement = document.getElementById("inputFile");
         const fileObject = fileElement.files[0];
-        //		const inputElement: any = document.getElementById('fileInput');
-        //		const fileObject = inputElement.files[0];
         var reader = new FileReader();
         reader.readAsText(fileObject);
         reader.onload = function () {
@@ -78,9 +75,9 @@ export function gridImport() {
             alert(reader.error);
         };
     };
-    // Get the CANCEL button element that closes the modal
+    // Le bouton CANCEL ferme la modale
     const icancelBtn = document.getElementsByClassName("icancel")[0];
-    // When the user clicks on CANCEL, just close the modal
+    // Tout Click en dehors de ces deux botons ferme la modale
     icancelBtn.onclick = function (event) {
         event.preventDefault();
         modal.style.display = "none";
