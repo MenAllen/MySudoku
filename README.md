@@ -17,7 +17,7 @@ Just launch index.html with browser
 App is available from https://menallen.github.io/MySudoku/
 
 ## Nav Menu
-1) Choisir: choose a grid
+1) Choisir: choose a grid - Warning: choice is made from a list of grids, RANDOMLY
 2) Tester: check for errors
 3) Importer: Import grids from JSON file
 4) Resoudre: launch resolve process (Note this can take several hours for difficult grids)
